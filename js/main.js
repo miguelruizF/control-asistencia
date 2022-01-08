@@ -29,7 +29,7 @@ $("#formLogin").submit(function(e) {
                         confirmButtonText: "Ingresar"
                     }).then((result) => {
                         if (result.value) {
-                            window.location.href = "dashboard/dash.php";
+                            window.location.href = "crud/personal.php";
                         }
                     });
                 }
