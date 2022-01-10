@@ -16,7 +16,7 @@ $("#formLogin").submit(function(e) {
             datatype: "json", //tipo de formato
             data: { usuario: usuario, password: password },
             success: function(data) {
-                if (data == "null") {
+                if (data === "null") {
                     Swall.fire({
                         icon: "error",
                         title: "Usuario y/o password incorrecta",
@@ -29,7 +29,7 @@ $("#formLogin").submit(function(e) {
                         confirmButtonText: "Ingresar"
                     }).then((result) => {
                         if (result.value) {
-                            window.location.href = "crud/personal.php";
+                            window.location.href = "dashboard/dash.php";
                         }
                     });
                 }
